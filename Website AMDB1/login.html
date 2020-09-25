@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css"> 
+        <script src="1.js"></script> 
+    </head>
+    <body>
+        <div class="header">
+            <div class="img-logo"> 
+                <img class="logo-nav" src="images/logo1.gif">
+            </div>
+            <div class="button-logo">
+                    <button class="btn login" onclick="action(2)">Login</button>
+                <button class="btn register" onclick="action(1)">Register</button>
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="main.html" class="btn-active">Home</a>
+            <div class="dropdown">
+                <a class="dropdown-header" style="padding-left: 55; padding-right: 55;">Product</a>
+                <div class="dropdown-content">
+                    <a href="Familycar.html" >Family Car</a>
+                    <a href="commercial.html">Commercial Car</a>
+                    <a href="luxury.html">Luxury Car</a>
+                </div>
+            </div>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="content">
+           <div class="judul2">
+               <p class="judul2"><b>Login</b></p>
+           </div>
+           <form class="loginbody">
+               <p>
+                <label>Email</label><br><br>
+                <input class="login-input" id="email" type="text"><br>
+                <span class="error" id="emailerr"></span>
+                </p>
+                <p>
+                <label>Password</label><br><br>
+                <input class="login-input" id="pass" type="text"><br>
+                <span class="error" id="passerr"></span>
+                </p>
+           </form>
+           <div class="loginbut">
+                <input type="button" class="btnlogin1" value="Login" id="submit" onclick="checkregister(2)">
+           </div>
+           <div class="loginbody">
+               <p><b>Don't have an account? Register <a href="register.html">here!</a></b></p>
+           </div>
+        </div>
+        <div class="footer">
+                <div class="footer-img">
+                    <a href="https://www.instagram.com/" target="_blank">
+                    <img src="images/instagram.png"></a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                     <img src="images/youtube.png"></a>
+                    <a href="https://www.twitter.com/"target="_blank">
+                    <img src="images/twitter.png"></a>
+                    <a href="https://www.facebook.com/"target="_blank">
+                    <img src="images/facebook.png"></a>
+                </div>
+                <div class="foot-box">
+                    <div style="padding-left:15px;">
+                        <p>Subcribe Our Newsletter</p>
+                        <input class="foot-input" type="text" value="Your Email"><br/><br/>
+                        <button class="subbtn" onclick="action()">Subscribe</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="bottom-footer">
+                    <p>©Copyright 2018 by Christopher Owen</p>
+                </div>
+            </div>
+    </body>
+</html>
